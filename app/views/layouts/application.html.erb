@@ -5,8 +5,17 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%
+=begin%>
+<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %> 
+<%
+=end%>
+
+    <%= stylesheet_pack_tag 'application' %>
+    <%= stylesheet_pack_tag params[:controller] %>
+    <%= javascript_pack_tag 'application' %>
+    <%= javascript_pack_tag params[:controller] %>
   </head>
 
   <body>
