@@ -2,9 +2,40 @@
   "name": "takaonagayan",
   "private": true,
   "dependencies": {
-    "@rails/webpacker": "3.5"
+    "@rails/webpacker": "4.0.0-pre.2",
+    "gulp-babel": "^8.0.0",
+    "jQuery": "^1.7.4",
+    "json-loader": "^0.5.7"
   },
   "devDependencies": {
-    "webpack-dev-server": "2.11.2"
-  }
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@webpack-cli/init": "^0.1.2",
+    "babel-loader": "^8.0.5",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ImpureSilver11/takaonagayan.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ImpureSilver11/takaonagayan/issues"
+  },
+  "homepage": "https://github.com/ImpureSilver11/takaonagayan#readme"
 }
