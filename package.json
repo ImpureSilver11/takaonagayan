@@ -4,7 +4,10 @@
   "dependencies": {
     "@rails/webpacker": "4.0.0-pre.2",
     "bootstrap": "^4.2.1",
+    "caniuse-lite": "^1.0.30000697",
+    "express": "^4.16.4",
     "gulp-babel": "^8.0.0",
+    "inquirer": "^5.0.0",
     "jQuery": "^1.7.4",
     "jquery": "^3.3.1",
     "json-loader": "^0.5.7",
@@ -15,9 +18,12 @@
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
     "@webpack-cli/init": "^0.1.2",
+    "babel-cli": "^6.26.0",
     "babel-loader": "^8.0.5",
+    "babel-preset-env": "^1.7.0",
     "case-sensitive-paths-webpack-plugin": "^2.1.2",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "nodemon": "^1.18.9",
     "webpack": "^4.28.3",
     "webpack-cli": "^3.2.1",
     "webpack-dev-server": "^3.1.14"
@@ -32,12 +38,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ImpureSilver11/takaonagayan.git"
-  },
+  "repository": "git+https://github.com/ImpureSilver11/takaonagayan.git",
   "keywords": [],
-  "author": "",
+  "author": "MasahiroTakahashi <take1931032@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ImpureSilver11/takaonagayan/issues"
