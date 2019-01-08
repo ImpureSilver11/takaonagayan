@@ -10,84 +10,20 @@
     <%= javascript_pack_tag params[:controller] %>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">結婚</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">結婚</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">結婚</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">結婚</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">結婚</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">結婚</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">結婚</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">結婚</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">結婚</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">結婚</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">結婚</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">結婚</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">結婚</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">結婚</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">結婚</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">結婚</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">結婚</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">結婚</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">結婚</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">結婚</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">結婚</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">結婚</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">結婚</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">結婚</a>
-          </li>
-        </ul>
+    <%# ヘッダー部分 %>
+    <%= render :partial => 'layouts/header'%>
+    <div class="row">
+      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+        <%# 左側に横メニュー作る%>
+        <%= render :partial => 'layouts/left_menu'%>
       </div>
-    </nav>
-    <%= yield %>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <%= yield %>
+      </div>
+      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+        <%= render :partial => 'layouts/right_menu'%>
+        <%# 右側に横メニュー作る%>
+      </div>
+    </div>
   </body>
 </html>
