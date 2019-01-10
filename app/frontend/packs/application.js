@@ -10,10 +10,3 @@ console.log('Hello World from Webpacker')
 import '../src/stylesheets/application.scss';
 import Rails from 'rails-ujs';
 Rails.start();
-
-// $(document).ready(function(){
-//   $('.button-left').click(function(){
-//       $('.sidebar').toggleClass('fliph');
-//   });
-    
-// });
