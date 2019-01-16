@@ -41,9 +41,9 @@ gem 'rails-i18n'
 # gem 'capistrano-rails', group: :development
 
 # Reduces boot times through caching; required in config/boot.rb
-gem 'bootsnap', '>= 1.1.0', require: false
+# gem 'bootsnap', '>= 1.1.0', require: false
 
-gem 'bootstrap-sass', '~> 3.0'
+gem 'bootstrap-sass', '~> 3.2'
 
 gem 'devise'
 gem 'omniauth-twitter'
