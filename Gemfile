@@ -42,7 +42,8 @@ gem 'rails-i18n'
 
 # Reduces boot times through caching; required in config/boot.rb
 # gem 'bootsnap', '>= 1.1.0', require: false
-
+gem 'bootstrap', '~> 4.1.1'
+gem 'jquery-rails'
 gem 'bootstrap-sass', '~> 3.2'
 
 gem 'devise'
