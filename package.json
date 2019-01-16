@@ -3,7 +3,7 @@
   "private": true,
   "dependencies": {
     "@rails/webpacker": "3.5",
-    "bootstrap": "^4.2.1",
+    "bootstrap": "^4.1.3",
     "caniuse-lite": "^1.0.30000697",
     "express": "^4.16.4",
     "gulp-babel": "^8.0.0",
