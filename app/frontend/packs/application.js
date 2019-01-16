@@ -12,8 +12,8 @@
 // import 'src/javascripts/application';
 // import 'src/javascripts/users';
 // export { default as users } from 'src/javascripts/users';
+import 'jQuery'
 // import 'bootstrap/dist/js/bootstrap'
-
 import '../src/stylesheets/application.scss';
 import Rails from 'rails-ujs';
 Rails.start();
