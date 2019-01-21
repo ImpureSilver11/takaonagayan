@@ -6,14 +6,9 @@
 //
 // To reference this file, add <%= javascript_pack_tag 'application' %> to the appropriate
 // layout file, like app/views/layouts/application.html.erb
-// import 'popper.js/dist/umd/popper';
-// import 'bootstrap/dist/js/bootstrap';
-// import 'src/stylesheets/application';
-// import 'src/javascripts/application';
-// import 'src/javascripts/users';
-// export { default as users } from 'src/javascripts/users';
+
 import 'jQuery'
-// import 'bootstrap/dist/js/bootstrap'
+
 import '../src/stylesheets/application.scss';
 import Rails from 'rails-ujs';
 Rails.start();
