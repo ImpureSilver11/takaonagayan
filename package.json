@@ -11,7 +11,6 @@
     "gulp-babel": "^8.0.0",
     "import-glob-loader": "^1.1.0",
     "inquirer": "^5.0.0",
-    "jQuery": "^1.7.4",
     "jquery": "^3.3.1",
     "jquery-ujs": "^1.2.2",
     "jsdom": "^13.1.0",
