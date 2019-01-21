@@ -3,6 +3,7 @@
   "private": true,
   "dependencies": {
     "@rails/webpacker": "3.5",
+    "babel-preset-es2015": "6.3.13",
     "bootstrap": "^4.1.3",
     "caniuse-lite": "^1.0.30000697",
     "express": "^4.16.4",
