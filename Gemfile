@@ -45,7 +45,6 @@ gem 'rails-i18n'
 gem 'bootstrap', '~> 4.1.1'
 gem 'jquery-rails'
 gem 'bootstrap-sass', '~> 3.2'
-
 gem 'devise'
 gem 'omniauth-twitter'
 
