@@ -14,20 +14,26 @@
     <%# ヘッダー部分 %>
     <%= render :partial => 'layouts/header'%>
     <div class="row">
-      <div class="col-md-3 col-lg-3 hidden-sm">
-        <%# 左側に横メニュー作る%>
-        <%# TODO:ログイン時のみ表示 %>
-        <%# TODO: モバイル版の時の表示の仕方を考える%>
-        <%= render :partial => 'layouts/left_menu'%>
-      </div>
+      <% if @current_user %>
+        <div class="col-md-3 col-lg-3 hidden-sm">
+          <%# 左側に横メニュー作る%>
+          <%# TODO:ログイン時のみ表示 %>
+          <%# TODO: モバイル版の時の表示の仕方を考える%>
+          <%= render :partial => 'layouts/left_menu'%>
+        </div>
+      <% end %>
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p>
         <%= yield %>
       </div>
-      <div class="col-md-3 col-lg-3 hidden-sm">
-        <%= render :partial => 'layouts/right_menu'%>
-        <%# 右側に横メニュー作る%>
-        <%# TODO: モバイル版の時の表示の仕方を考える%>
-      </div>
+      <% if @current_user %>
+        <div class="col-md-3 col-lg-3 hidden-sm">
+          <%= render :partial => 'layouts/right_menu'%>
+          <%# 右側に横メニュー作る%>
+          <%# TODO: モバイル版の時の表示の仕方を考える%>
+        </div>
+      <% end %>
     </div>
   </body>
 </html>

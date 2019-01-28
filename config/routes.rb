@@ -1,6 +1,14 @@
 Rails.application.routes.draw do
-  # devise_for :users
   get '/' => 'tops#index'
-  resources :tops
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  devise_for :user, :controllers => {
+    :registrations => 'users/registrations',
+    :sessions => 'users/sessions'   
+  } 
+
+  devise_scope :devise do
+    get "sign_in", :to => "sessions#new"
+    get "sign_out", :to => "sessions#destroy" 
+  end
+  resources :tops, :sessions, :devise, :sessions, :home
 end

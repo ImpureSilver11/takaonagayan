@@ -68,9 +68,13 @@
         ユーザー
       </a>
       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <a class="dropdown-item" href="#">ログイン</a>
-        <a class="dropdown-item" href="#">ユーザー設定</a>
-        <a class="dropdown-item" href="#">ログアウト</a>
+      <% if @current_user %>
+        <%= link_to 'プロフィール変更', edit_user_registration_path(@current_user) , class: 'dropdown-item'  %>
+        <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: 'dropdown-item'  %>
+      <% else %>
+        <%= link_to 'サインアップ', new_user_registration_path, method: :get, class: 'dropdown-item'  %>
+        <%= link_to 'ログイン', sign_in_path, class: 'dropdown-item'  %>
+      <% end %>
       </div>
     </li>
   <form class="form-inline my-2 my-lg-0">
