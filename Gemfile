@@ -15,7 +15,7 @@ gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
-gem 'nokogiri', '1.9.1'
+gem 'nokogiri', '1.10.3'
 
 gem 'rails_12factor'
 
